@@ -183,6 +183,8 @@ Change to folder you want to have your source code.
 % export QT_DIR="/Volumes/DATA-2022/Apps/qt.io/2025-06jun-06--6.9.1/6.8.3/macos/lib/cmake/Qt6/"
 ```
 
+- NOTE: Adjust path as required for your system.
+
 
 ### IF you need to compile WITHOUT PoDoFo (-DWITH_PODOFO=OFF)
 
@@ -194,6 +196,7 @@ Footnote
 cmake -DWITH_PODOFO=OFF  -DCMAKE_OSX_SYSROOT=macosx -DCMAKE_OSX_DEPLOYMENT_TARGET=15.0  -DBUILD_OSX_BUNDLE=1 -DWANT_CAIRO=1 -DCMAKE_INSTALL_PREFIX:PATH=/Volumes/Apps/Office/scribus.net/src-app/Scribus.App/Contents/ ../scribustrunk/
 ```
 
+- NOTE: Adjust path as required for your system.
 
 
 ### If you need to compile WITH PdDoFo
@@ -206,6 +209,7 @@ This did not work on my system because brew profided only version 1.0.0 of PdDoF
 ```
 % cmake -DCMAKE_OSX_SYSROOT=macosx -DCMAKE_OSX_DEPLOYMENT_TARGET=15.0  -DBUILD_OSX_BUNDLE=1 -DWANT_CAIRO=1 -DCMAKE_INSTALL_PREFIX:PATH=/Volumes/Apps/Office/scribus.net/src-app/Scribus.App/Contents/ ../scribustrunk/
 ```
+- NOTE: Adjust path as required for your system.
 
 
 ```
