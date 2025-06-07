@@ -3,46 +3,35 @@ How to compile Scribus 1.7.x on macOS
 
 After these instrucations, you will have an up and running development environment where you can change source code and recompile it, and start your every new Scribus and enjoy your changes you made a minute ago.
 
-
+NOTE:
+- We use Homebrew (brew) for macOS here.
+- We use Qt Version 6.8.3, which seems to be faster then 6.8.1 used for Scribus 1.7.0-development release.
 
 <img width="1953" alt="scribus-1 7 1-svn" src="https://github.com/user-attachments/assets/051ccfde-947c-418a-bbfa-490008304174" />
 
 
-
 ## Document History
 
-### 2025-06jun-07 (DRAFT)
+### 2025-06jun-07--2 (DRAFT)
 
-- Limitaion. We had to left out (commented out on the cmake build system manually) podofo because Version 1.0.0 of podofo does not work right now out of the box with Scribus 1.7.1 source code.
+- There is no podofo limitation, scribus source code was ported to support version 1.0.0 of podofo.
 
-- TODO: Solution? Install podofo lower version with Conan? https://conan.io/downloads
-https://conan.io/center/recipes/podofo
-
+### 2025-06jun-07--1 (DRAFT)
 
 ### Limitations
 
 This limitation is because Homebrew (brew) used here installed with:
-
 ```
 % brew install podofo
 ```
-
 - but this will install version 1.0.0 - but a lower version is known to work with Scribus.
-
-
 - IMPORTANT: Homebrew (brew) and MacPorts should not be run and installed togehter. This will crash your OS installation.
 
-
 #### TODO: Someone needs to port Scribus Code to be compatible with podofo 1.0.0
-
 pdflib_core.cpp
-
 ```
 #if (PODOFO_VERSION >= PODOFO_MAKE_VERSION(0, 10, 0))
 ```
-
-
-
 
 
 
