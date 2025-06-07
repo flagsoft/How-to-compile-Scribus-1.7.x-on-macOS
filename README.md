@@ -244,4 +244,21 @@ Note: It will take about 15 minutes to compile all source code for the first tim
 
 
 
+## Step 6: Update source code
+
+If there is new source code available, do an update:
+```
+% svn update
+```
+
+
+Other versions to checkout are:
+```
+Development	1.7.x		/trunk/Scribus	svn co svn://scribus.net/trunk/Scribus scribustrunk
+Stable	1.6.x		/branches/Version16x/Scribus	svn co svn://scribus.net/branches/Version16x/Scribus scribus16x
+Experimental	1.5.x		/branches/Version15x/Scribus	svn co svn://scribus.net/branches/Version15x/Scribus scribus15x
+Stable	1.4.x		/branches/Version14x/Scribus	svn co svn://scribus.net/branches/Version14x/Scribus scribus14x
+```
+
+
 
