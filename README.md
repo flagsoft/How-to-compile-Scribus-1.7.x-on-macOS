@@ -3,6 +3,10 @@ How to compile Scribus 1.7.x on macOS
 
 After these instrucations, you will have an up and running development environment where you can change source code and recompile it, and start your every new Scribus and enjoy your changes you made a minute ago.
 
+<img width="1953" alt="scribus-1 7 1-svn" src="https://github.com/user-attachments/assets/64958cd4-e3a2-4f24-a6bb-2c124a7f7546" />
+
+
+
 
 ## Document History
 
